@@ -92,4 +92,4 @@ Implements the voting interface and Borda calculation logic.
 ---
 
 ## Demo
-A demonstration video of the application is included in the repository.
+A demonstration video of the application is included in the repository. Watch the demo here: [Borda Voting App Demo](https://drive.google.com/file/d/1H22jtLJsIGjqh_J1aedVEx13OXwt0bcI/view?usp=sharing)
