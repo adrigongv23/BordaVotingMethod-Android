@@ -43,11 +43,27 @@ The application was developed as an individual academic project during an Erasmu
 - Min SDK: 28 (Android 9 Pie)
 
 ### Project Structure (app/src/main/java/de/fra_uas/fb2/mobiledevices/bordasvotingmethod)
-- `MainActivity.kt` – main voting workflow
-- `SecondActivity.kt` – secondary voting interface
-- `ThirdActivity.kt` – results and ranking
 
-Resources:
+#### `MainActivity.kt`
+Acts as the entry point and configuration screen of the application.
+
+**Responsibilities include:**
+* **Input Validation:** Defining the number of voting options (2–10 range validation) and managing option names.
+* **State Management:** Resetting stored voting data when configuration changes and managing application state using `SharedPreferences`.
+* **Results & Navigation:** Displaying voting results/counts and launching the voting interface (`SecondActivity`).
+* **Global Actions:** Providing global reset functionality.
+
+#### `SecondActivity.kt`
+Implements the voting interface and Borda calculation logic.
+
+**Responsibilities include:**
+* **Dynamic UI:** Dynamically displaying voting options based on user configuration.
+* **Vote Collection:** Collecting votes using `SeekBar` sliders.
+* **Borda Logic:** Converting slider values into Borda rankings and updating cumulative vote scores.
+* **Validation:** Detecting tied rankings and preventing invalid submissions.
+* **Persistence:** Tracking total number of voting sessions and persisting results using `SharedPreferences`.
+
+#### `Resources:`
 - Layouts → `app/src/main/res/layout`
 - Drawables → `app/src/main/res/drawable`
 - Values → `app/src/main/res/values`
