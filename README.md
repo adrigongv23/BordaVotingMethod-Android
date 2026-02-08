@@ -42,7 +42,7 @@ The application was developed as an individual academic project during an Erasmu
 - Target SDK: 34 (Android 14)
 - Min SDK: 28 (Android 9 Pie)
 
-### Project Structure
+### Project Structure (app/src/main/java/de/fra_uas/fb2/mobiledevices/bordasvotingmethod)
 - `MainActivity.kt` – main voting workflow
 - `SecondActivity.kt` – secondary voting interface
 - `ThirdActivity.kt` – results and ranking
