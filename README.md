@@ -1,5 +1,7 @@
 # Borda Voting Method Android App
 
+See the Readme_ES.md file for the Spanish version.
+
 ## Project Introduction
 This Android application implements a voting system based on the **Borda Count Method**, combined with an additional **0–100 score-based voting system**.  
 The app allows users to create and manage voting sessions, assign scores using sliders, and obtain a final ranking of options based on accumulated points.
