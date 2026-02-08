@@ -42,6 +42,33 @@ Proyecto desarrollado como trabajo individual durante una estancia Erasmus en la
 - Target SDK: 34 (Android 14)
 - Min SDK: 28 (Android 9 Pie)
 
+### Estructura del Proyecto (app/src/main/java/de/fra_uas/fb2/mobiledevices/bordasvotingmethod)
+
+#### `MainActivity.kt`
+Actúa como el punto de entrada y la pantalla de configuración de la aplicación.
+
+**Las responsabilidades incluyen:**
+* **Validación de entradas:** Definir el número de opciones de votación (validación de rango 2–10) y gestionar los nombres de las opciones.
+* **Gestión de estado:** Restablecer los datos de votación almacenados cuando cambia la configuración y gestionar el estado de la aplicación utilizando `SharedPreferences`.
+* **Resultados y Navegación:** Mostrar los resultados/recuentos de la votación e iniciar la interfaz de votación (`SecondActivity`).
+* **Acciones Globales:** Proporcionar una funcionalidad de reinicio global.
+
+#### `SecondActivity.kt`
+Implementa la interfaz de votación y la lógica de cálculo Borda.
+
+**Las responsabilidades incluyen:**
+* **Interfaz Dinámica:** Mostrar dinámicamente las opciones de votación basándose en la configuración del usuario.
+* **Recolección de Votos:** Recolectar votos utilizando deslizadores `SeekBar`.
+* **Lógica Borda:** Convertir los valores de los deslizadores en clasificaciones Borda y actualizar los puntajes acumulados.
+* **Validación:** Detectar empates en las clasificaciones y prevenir envíos inválidos.
+* **Persistencia:** Rastrear el número total de sesiones de votación y persistir los resultados utilizando `SharedPreferences`.
+
+#### `Resources:`
+- Layouts → `app/src/main/res/layout`
+- Drawables → `app/src/main/res/drawable`
+- Values → `app/src/main/res/values`
+- Manifest → `app/src/main/AndroidManifest.xml`
+
 ---
 
 ## Ejecución
