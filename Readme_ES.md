@@ -91,5 +91,5 @@ Implementa la interfaz de votación y la lógica de cálculo Borda.
 
 ---
 
-## 🎥 Demo
+## Demo
 A continuación podrá ver una demostración de la aplicación, accediendo al enlace. [Borda Voting App Demo](https://drive.google.com/file/d/1H22jtLJsIGjqh_J1aedVEx13OXwt0bcI/view?usp=sharing)
